@@ -8,8 +8,8 @@
  */
 
 .notion {
-  --notion-max-width: 720px;
-  --notion-header-height: 54px;
+  --notion-max-width: 800px;
+  --notion-header-height: 40px;
 }
 
 .notion-page {
@@ -22,7 +22,7 @@
 }
 
 .notion-text {
-  padding: 0.5em 2px;
+  padding: 0.1em 2px;
 }
 
 .notion-asset-caption {
@@ -47,8 +47,8 @@
 }
 
 .notion-gallery-grid {
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  grid-gap: 6vmin;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 3vmin;
   gap: 6vmin;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .notion-gallery-grid .notion-page-title-text {
-  font-size: 2em;
+  font-size: 1em;
   white-space: unset;
 }
 
@@ -71,21 +71,23 @@
 }
 
 .notion-collection-card {
-  border-radius: 16px;
+  border-radius: 24px;
   box-shadow: none;
 }
 
 .notion-collection-card-cover img {
-  border-radius: 16px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
 }
 
 .notion-collection-card {
+  text-align: left;
   overflow: visible;
 }
 
 .notion-collection-card-cover {
-  border-radius: 16px;
-  overflow: visible;
+  border-radius: 24px;
+  overflow: clip;
   box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
 }
 
@@ -181,8 +183,8 @@
 
 .notion-page-cover {
   max-width: 1200px;
-  border-radius: 24px;
-  box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
+  border-radius: 12px;
+  box-shadow: none;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -320,19 +322,22 @@
 
 /* if you don't want rounded page images, remove this */
 .notion-page-icon-wrapper img.notion-page-icon {
+  max-width: 6em;
+  max-height: 6em;
+  margin-top: 2em;
   border-radius: 50%;
-  box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
+  background-color: rgb(255 255 255 / 20%);
+  box-shadow: none
 }
 
 .notion-header {
-  background: hsla(0, 0%, 100%, 0.8);
-  backdrop-filter: saturate(180%) blur(16px);
+  background: hsla(0, 0%, 100%, .1);
+  backdrop-filter: saturate(100%) blur(2px);
 }
 
 .dark-mode .notion-header {
-  background: transparent;
-  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
-  backdrop-filter: saturate(180%) blur(8px);
+  background: rgb(50 55 60 / 50%);
+  backdrop-filter: saturate(100%) blur(2px);
 }
 
 .notion-bookmark:hover {
