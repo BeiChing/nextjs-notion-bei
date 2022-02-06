@@ -8,7 +8,7 @@ module.exports = {
 
   // basic site info (required)
   name: 'BEI',
-  domain: 'transitivebullsh.it',
+  domain: 'beidaydream.com',
   author: 'BEI',
 
   // open graph metadata (optional)
