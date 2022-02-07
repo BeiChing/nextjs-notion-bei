@@ -8,7 +8,7 @@ module.exports = {
 
   // basic site info (required)
   name: 'BEI',
-  domain: 'beidaydream.com',
+  domain: 'notion-beidaydream.vercel.app',
   author: 'BEI',
 
   // open graph metadata (optional)
