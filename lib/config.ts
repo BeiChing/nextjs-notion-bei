@@ -42,19 +42,6 @@ export const author: string = getSiteConfig('author')
 export const domain: string = getSiteConfig('domain')
 export const description: string = getSiteConfig('description', 'Notion Blog')
 
-// social accounts
-//export const twitter: string | null = getSiteConfig('twitter', null)
-//export const github: string | null = getSiteConfig('github', null)
-//export const linkedin: string | null = getSiteConfig('linkedin', null)
-
-//export const socialImageTitle: string | null = getSiteConfig(
-//  'socialImageTitle',
-//  null
-//)
-//export const socialImageSubtitle: string | null = getSiteConfig(
-//  'socialImageSubtitle',
-//  null
-//)
 
 // default notion values for site-wide consistency (optional; may be overridden on a per-page basis)
 export const defaultPageIcon: string | null = getSiteConfig(
